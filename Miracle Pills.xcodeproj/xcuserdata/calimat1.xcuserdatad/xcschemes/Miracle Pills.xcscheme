@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F65BC8971D9B3A0900B0DC93"
+               BuildableName = "Miracle Pills.app"
+               BlueprintName = "Miracle Pills"
+               ReferencedContainer = "container:Miracle Pills.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F65BC8AB1D9B3A0A00B0DC93"
+               BuildableName = "Miracle PillsTests.xctest"
+               BlueprintName = "Miracle PillsTests"
+               ReferencedContainer = "container:Miracle Pills.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F65BC8B61D9B3A0A00B0DC93"
+               BuildableName = "Miracle PillsUITests.xctest"
+               BlueprintName = "Miracle PillsUITests"
+               ReferencedContainer = "container:Miracle Pills.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F65BC8971D9B3A0900B0DC93"
+            BuildableName = "Miracle Pills.app"
+            BlueprintName = "Miracle Pills"
+            ReferencedContainer = "container:Miracle Pills.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F65BC8971D9B3A0900B0DC93"
+            BuildableName = "Miracle Pills.app"
+            BlueprintName = "Miracle Pills"
+            ReferencedContainer = "container:Miracle Pills.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F65BC8971D9B3A0900B0DC93"
+            BuildableName = "Miracle Pills.app"
+            BlueprintName = "Miracle Pills"
+            ReferencedContainer = "container:Miracle Pills.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
