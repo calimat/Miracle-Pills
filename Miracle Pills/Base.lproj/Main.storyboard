@@ -16,12 +16,13 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="successIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="Msh-HJ-pdj"/>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miraclePillEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="twq-0f-LPK">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="101" id="5la-oV-iBj"/>
+                                    <constraint firstAttribute="height" constant="50" id="5la-oV-iBj"/>
                                     <constraint firstAttribute="width" constant="105" id="IBG-Z6-XRk"/>
                                 </constraints>
                             </imageView>
@@ -121,17 +122,58 @@
                                     <constraint firstAttribute="width" constant="240" id="yuk-1F-UYW"/>
                                 </constraints>
                             </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COUNTRY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NzI-OD-hTQ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="BL7-F8-gq1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Oq-C6-Qsi">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AXO-q4-HcY"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZIP CODE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNd-dh-Ut8">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="Zck-Od-Osv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your zip code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fPe-Cw-WcC">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="c6B-27-GNV"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQQ-pM-N1g">
+                                <state key="normal" title="Button" image="buyNowBtn"/>
+                                <connections>
+                                    <action selector="buyNowBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A6g-of-suI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eeW-AM-djg" firstAttribute="top" secondItem="ydq-Mk-QFj" secondAttribute="bottom" constant="8" id="2r2-Nv-ecO"/>
+                            <constraint firstItem="9Oq-C6-Qsi" firstAttribute="top" secondItem="NzI-OD-hTQ" secondAttribute="bottom" constant="8" id="35V-XU-tC3"/>
                             <constraint firstItem="Awy-ik-8MG" firstAttribute="top" secondItem="twq-0f-LPK" secondAttribute="bottom" constant="25" id="3FF-92-9Wa"/>
                             <constraint firstItem="di9-5S-EEA" firstAttribute="top" secondItem="hz4-Y2-PzE" secondAttribute="bottom" constant="8" id="3aQ-ts-lrM"/>
                             <constraint firstItem="8Ui-wz-urg" firstAttribute="leading" secondItem="iP6-4D-e2i" secondAttribute="leading" id="4PQ-2m-dKV"/>
                             <constraint firstItem="di9-5S-EEA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4uV-Qt-hhR"/>
+                            <constraint firstItem="fPe-Cw-WcC" firstAttribute="top" secondItem="wNd-dh-Ut8" secondAttribute="bottom" constant="8" id="6xt-lp-KJl"/>
                             <constraint firstItem="LjF-iG-hmf" firstAttribute="trailing" secondItem="ao5-R2-rP6" secondAttribute="trailing" id="7ah-Ww-oGH"/>
                             <constraint firstItem="iP6-4D-e2i" firstAttribute="trailing" secondItem="17Z-dm-vOy" secondAttribute="trailing" id="Bt1-Ih-igo"/>
                             <constraint firstItem="ao5-R2-rP6" firstAttribute="top" secondItem="afJ-8a-v9I" secondAttribute="bottom" constant="10" id="ByM-pX-hBY"/>
+                            <constraint firstItem="qQQ-pM-N1g" firstAttribute="centerX" secondItem="fPe-Cw-WcC" secondAttribute="centerX" id="CLK-Hw-5kQ"/>
                             <constraint firstItem="17Z-dm-vOy" firstAttribute="top" secondItem="LjF-iG-hmf" secondAttribute="bottom" constant="8" id="Cbx-wc-hZo"/>
                             <constraint firstItem="ydq-Mk-QFj" firstAttribute="trailing" secondItem="8Ui-wz-urg" secondAttribute="trailing" id="E0O-Go-HQM"/>
                             <constraint firstItem="LjF-iG-hmf" firstAttribute="leading" secondItem="ao5-R2-rP6" secondAttribute="leading" id="GLy-qm-8Wk"/>
@@ -141,30 +183,64 @@
                             <constraint firstItem="ao5-R2-rP6" firstAttribute="centerX" secondItem="afJ-8a-v9I" secondAttribute="centerX" id="K3K-dB-BNg"/>
                             <constraint firstItem="8Ui-wz-urg" firstAttribute="top" secondItem="iP6-4D-e2i" secondAttribute="bottom" constant="8" id="Klw-Xv-2XJ"/>
                             <constraint firstItem="afJ-8a-v9I" firstAttribute="centerX" secondItem="Awy-ik-8MG" secondAttribute="centerX" id="Ksc-Lg-QHe"/>
+                            <constraint firstItem="fPe-Cw-WcC" firstAttribute="top" secondItem="wNd-dh-Ut8" secondAttribute="bottom" constant="8" id="LpQ-IN-KHA"/>
                             <constraint firstItem="iP6-4D-e2i" firstAttribute="leading" secondItem="17Z-dm-vOy" secondAttribute="leading" id="M61-kF-R4z"/>
+                            <constraint firstItem="Msh-HJ-pdj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="O8X-3o-fWM"/>
+                            <constraint firstItem="fPe-Cw-WcC" firstAttribute="trailing" secondItem="wNd-dh-Ut8" secondAttribute="trailing" id="OW1-Be-mYB"/>
                             <constraint firstItem="vQS-OC-Rj1" firstAttribute="top" secondItem="eeW-AM-djg" secondAttribute="bottom" constant="8" id="Of0-cd-5ft"/>
+                            <constraint firstItem="wNd-dh-Ut8" firstAttribute="leading" secondItem="9Oq-C6-Qsi" secondAttribute="leading" id="P3g-VA-uc7"/>
                             <constraint firstItem="Awy-ik-8MG" firstAttribute="centerX" secondItem="twq-0f-LPK" secondAttribute="centerX" id="PDw-Bj-JzJ"/>
                             <constraint firstItem="ydq-Mk-QFj" firstAttribute="top" secondItem="8Ui-wz-urg" secondAttribute="bottom" constant="8" id="PTv-ly-dIc"/>
+                            <constraint firstItem="NzI-OD-hTQ" firstAttribute="leading" secondItem="vQS-OC-Rj1" secondAttribute="leading" id="Prn-cS-Wup"/>
                             <constraint firstItem="twq-0f-LPK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QOi-pX-wro"/>
+                            <constraint firstItem="9Oq-C6-Qsi" firstAttribute="leading" secondItem="NzI-OD-hTQ" secondAttribute="leading" id="RZF-gw-mJn"/>
+                            <constraint firstItem="NzI-OD-hTQ" firstAttribute="top" secondItem="hz4-Y2-PzE" secondAttribute="bottom" constant="8" id="Rc5-QB-MAm"/>
                             <constraint firstItem="afJ-8a-v9I" firstAttribute="top" secondItem="Awy-ik-8MG" secondAttribute="bottom" constant="8" id="W5q-qb-Yb1"/>
+                            <constraint firstItem="wNd-dh-Ut8" firstAttribute="trailing" secondItem="9Oq-C6-Qsi" secondAttribute="trailing" id="WhG-Na-k5i"/>
+                            <constraint firstItem="qQQ-pM-N1g" firstAttribute="top" secondItem="di9-5S-EEA" secondAttribute="bottom" constant="8" id="YtS-lf-K7m"/>
+                            <constraint firstItem="9Oq-C6-Qsi" firstAttribute="top" secondItem="NzI-OD-hTQ" secondAttribute="bottom" constant="8" id="Ytr-db-ouE"/>
                             <constraint firstItem="eeW-AM-djg" firstAttribute="trailing" secondItem="ydq-Mk-QFj" secondAttribute="trailing" id="aLe-9z-0Qo"/>
                             <constraint firstItem="17Z-dm-vOy" firstAttribute="trailing" secondItem="LjF-iG-hmf" secondAttribute="trailing" id="aPt-2A-iJH"/>
+                            <constraint firstItem="wNd-dh-Ut8" firstAttribute="top" secondItem="9Oq-C6-Qsi" secondAttribute="bottom" constant="8" id="anJ-bX-Dxw"/>
                             <constraint firstItem="vQS-OC-Rj1" firstAttribute="trailing" secondItem="eeW-AM-djg" secondAttribute="trailing" id="bcf-9z-1g1"/>
                             <constraint firstItem="hz4-Y2-PzE" firstAttribute="leading" secondItem="vQS-OC-Rj1" secondAttribute="leading" id="cFj-8L-LkP"/>
                             <constraint firstItem="17Z-dm-vOy" firstAttribute="leading" secondItem="LjF-iG-hmf" secondAttribute="leading" id="dS2-98-3w7"/>
                             <constraint firstItem="hz4-Y2-PzE" firstAttribute="top" secondItem="vQS-OC-Rj1" secondAttribute="bottom" constant="8" id="icO-Wo-Ny3"/>
+                            <constraint firstItem="9Oq-C6-Qsi" firstAttribute="trailing" secondItem="NzI-OD-hTQ" secondAttribute="trailing" id="idO-TU-vB4"/>
+                            <constraint firstItem="Msh-HJ-pdj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ied-74-7fe"/>
+                            <constraint firstItem="NzI-OD-hTQ" firstAttribute="trailing" secondItem="vQS-OC-Rj1" secondAttribute="trailing" id="j8z-AB-zUs"/>
+                            <constraint firstItem="fPe-Cw-WcC" firstAttribute="leading" secondItem="wNd-dh-Ut8" secondAttribute="leading" id="l9v-zO-NMP"/>
                             <constraint firstItem="ao5-R2-rP6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="oTz-mn-qHM"/>
                             <constraint firstItem="8Ui-wz-urg" firstAttribute="trailing" secondItem="iP6-4D-e2i" secondAttribute="trailing" id="pbi-X1-Uah"/>
                             <constraint firstItem="LjF-iG-hmf" firstAttribute="top" secondItem="ao5-R2-rP6" secondAttribute="bottom" constant="14" id="phw-yM-JQt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ao5-R2-rP6" secondAttribute="trailing" constant="20" id="poz-1P-sbN"/>
                             <constraint firstItem="iP6-4D-e2i" firstAttribute="top" secondItem="17Z-dm-vOy" secondAttribute="bottom" constant="8" id="rbc-hD-qiZ"/>
+                            <constraint firstItem="wNd-dh-Ut8" firstAttribute="top" secondItem="9Oq-C6-Qsi" secondAttribute="bottom" constant="8" id="rhV-aa-aCE"/>
                             <constraint firstItem="twq-0f-LPK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="yTb-23-QdS"/>
                             <constraint firstItem="ydq-Mk-QFj" firstAttribute="leading" secondItem="8Ui-wz-urg" secondAttribute="leading" id="yhk-3T-dYS"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addressFLD" destination="8Ui-wz-urg" id="AGb-7V-Opf"/>
+                        <outlet property="addressLbl" destination="iP6-4D-e2i" id="uFm-cv-Hgn"/>
+                        <outlet property="buyNowBtn" destination="qQQ-pM-N1g" id="BvU-hH-Psq"/>
+                        <outlet property="cityFLD" destination="eeW-AM-djg" id="HFU-3k-xpZ"/>
+                        <outlet property="cityLbl" destination="ydq-Mk-QFj" id="Gzn-Cp-utW"/>
+                        <outlet property="countryFLD" destination="9Oq-C6-Qsi" id="8Bl-CP-Jtu"/>
+                        <outlet property="countryLbl" destination="NzI-OD-hTQ" id="SLl-dk-cD4"/>
+                        <outlet property="dividerView" destination="ao5-R2-rP6" id="crZ-Ho-AXH"/>
+                        <outlet property="fullNameFLD" destination="17Z-dm-vOy" id="L2L-AG-S24"/>
+                        <outlet property="fullNameLbl" destination="LjF-iG-hmf" id="73x-FB-H11"/>
+                        <outlet property="mainView" destination="8bC-Xf-vdC" id="vBq-CH-0RN"/>
+                        <outlet property="miraclePillSubTitle" destination="afJ-8a-v9I" id="yDx-Qv-5yF"/>
+                        <outlet property="miraclePillTitle" destination="Awy-ik-8MG" id="fYw-n0-ttm"/>
+                        <outlet property="pillImage" destination="twq-0f-LPK" id="Z2N-Bz-iPE"/>
+                        <outlet property="stateLbl" destination="vQS-OC-Rj1" id="hWl-Tx-SFs"/>
                         <outlet property="statePicker" destination="di9-5S-EEA" id="gWJ-ZD-ocb"/>
                         <outlet property="statePickerBtn" destination="hz4-Y2-PzE" id="zhd-P6-C3I"/>
+                        <outlet property="successImage" destination="Msh-HJ-pdj" id="Awr-co-E97"/>
+                        <outlet property="zipCodeFLD" destination="fPe-Cw-WcC" id="ymv-rf-JKa"/>
+                        <outlet property="zipCodeLbl" destination="wNd-dh-Ut8" id="ifB-7T-mye"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -173,6 +249,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="buyNowBtn" width="225" height="45"/>
         <image name="miraclePillEmoji" width="90" height="90"/>
+        <image name="successIndicator" width="180" height="180"/>
     </resources>
 </document>
